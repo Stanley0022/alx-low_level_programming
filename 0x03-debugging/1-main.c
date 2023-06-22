@@ -14,8 +14,8 @@ int main(void)
 
     while (i < 10)
     {
-        putchar('0' + i);  // Print the character representation of the digits 0-9
-        i++;              // Increment i to avoid the infinite loop
+        // putchar(i);
+        i++;  // Increment i to avoid the infinite loop
     }
 
     printf("Infinite loop avoided! \\o/\n");
