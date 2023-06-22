@@ -1,20 +1,20 @@
 #include <stdio.h>
 
-/**
-* main - Avoids an infinite loop
-* Return: 0
-*/
-int main(void)
-{
+void positive_or_negative(int num) {
+    if (num > 0)
+        printf("%d is positive\n", num);
+    else if (num < 0)
+        printf("%d is negative\n", num);
+    else
+        printf("The number is zero\n");
+}
+
+int main(void) {
     int i;
 
-    printf("Infinite loop incoming :(\n");
     i = 0;
-    /*while (i < 10)*/
-    /*{*/
-    /*    putchar(i);*/
-    /*}*/
-    printf("Infinite loop avoided! \\o/\n");
-    return (0);
+    positive_or_negative(i);
+
+    return 0;
 }
 
