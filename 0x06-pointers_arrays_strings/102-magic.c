@@ -8,9 +8,13 @@ int main(void)
 
     a[2] = 1024;
     p = &n;
+    /*
+    
+     memcpy(p, &a[2], sizeof(int));
 
-    memcpy(p, &a[2], sizeof(int)); // Copy the value of a[2] to n
-
+   */
+  ;
+  /* ...so that this prints 98\n */
     printf("a[2] = %d\n", a[2]);
     return 0;
 }
